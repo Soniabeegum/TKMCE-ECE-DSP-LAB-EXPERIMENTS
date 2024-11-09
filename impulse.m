@@ -1,0 +1,13 @@
+clc;
+clf;
+clear all;
+close all;
+n1=input('enter starting pt');
+n2=input('enter ending pt');
+s=-n1:1:n2;
+amp=[zeros(1,n1) 1 zeros(1,n2)];
+stem(s,amp);
+title('impulse');
+xlabel('time');
+ylabel('amp');
+grid on;
